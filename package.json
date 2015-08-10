@@ -4,7 +4,8 @@
   "description": "a quadcopter for delivering qr-coded payloads",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "rsync": "rsync -r ../iQRus pi@10.0.0.219:~/Programming --exclude 'node_modules'"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,7 @@
   },
   "homepage": "https://github.com/argonauthills/iQRus",
   "dependencies": {
-    "gpio": "^0.2.7"
+    "gpio": "^0.2.7",
+    "onoff": "^1.0.2"
   }
 }
