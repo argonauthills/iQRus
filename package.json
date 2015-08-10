@@ -1,0 +1,28 @@
+{
+  "name": "iqrus",
+  "version": "1.0.0",
+  "description": "a quadcopter for delivering qr-coded payloads",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:argonauthills/iQRus.git"
+  },
+  "keywords": [
+    "quadcopter",
+    "qr",
+    "raspberry",
+    "pi"
+  ],
+  "author": "John Hawker, Jason Andrew Hills",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/argonauthills/iQRus/issues"
+  },
+  "homepage": "https://github.com/argonauthills/iQRus",
+  "dependencies": {
+    "gpio": "^0.2.7"
+  }
+}
