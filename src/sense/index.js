@@ -25,7 +25,7 @@ function ultrasonicInit(pins) {
     return ultrasonic.init(pins)
     .then(function(listener) {
         listener.on(ultrasonic.newYEventName, function(value) {
-            console.log('Distance: ' + sensor().toFixed(2) + ' cm')
+            // console.log('Distance: ' + sensor().toFixed(2) + ' cm')
         })
     })
 }

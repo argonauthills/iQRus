@@ -8,6 +8,10 @@ Hardware dependencies
 
 - Raspberry Pi
 - HC-SR04 Ultrasonic Distance Sensor
+    - powered on 5V
+- Adafruit Ultimate GPS Breakout
+    - powered on 5V, logic should be 3V3
+- HMC5883L Magnetometer
 
 Software dependencies
 ---------------------
@@ -23,3 +27,8 @@ Run
 ---
 
     npm start
+
+Additional resources
+--------------------
+
+- http://thejackalofjavascript.com/rpi-an-ultrasonic-sensor-measure-distances/

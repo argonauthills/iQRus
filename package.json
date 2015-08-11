@@ -29,6 +29,7 @@
     "events": "^1.0.2",
     "gpio": "^0.2.7",
     "onoff": "^1.0.2",
-    "r-pi-usonic": "2.4.1"
+    "r-pi-usonic": "2.4.1",
+    "hmc5883l": "git://github.com/argonauthills/hmc5883l.git#b753f0eb8845815499364cfe5fd22eba744d18be"
   }
 }
