@@ -6,7 +6,7 @@ var sense = require('./sense/index')
 
 var usonic = require('r-pi-usonic');
 var sensor = usonic.createSensor(18, 17, 1000);
-setTimeout(function() {
+setInterval(function() {
     console.log('Distance: ' + sensor().toFixed(2) + ' cm');
 }, 100);
 
