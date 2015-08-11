@@ -7,7 +7,7 @@ var config = require('./config')
 
 var sense = require('./sense/index')
 
-sense.init(config.pins)
+sense.init(config)
 
 console.log("starting...")
 
