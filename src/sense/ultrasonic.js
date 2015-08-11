@@ -29,6 +29,6 @@ function init(pins) {
 }
 
 module.exports = {
-    newYEventName: newYEventName
+    newYEventName: newYEventName,
     init: init
 }
