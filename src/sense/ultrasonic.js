@@ -20,7 +20,7 @@ function init(pins) {
         var eventEmitter = new EventEmitter()
 
         setInterval(function() {
-            eventEmitter(newYEventName, sensor())
+            eventEmitter.emit(newYEventName, sensor())
         }, 100)  //TODO: put value in config
 
         return resolve(eventEmitter)
