@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/argonauthills/iQRus",
   "dependencies": {
+    "bluebird": "^2.9.34",
     "events": "^1.0.2",
     "gpio": "^0.2.7",
     "onoff": "^1.0.2",
