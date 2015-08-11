@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/argonauthills/iQRus",
   "dependencies": {
+    "events": "^1.0.2",
     "gpio": "^0.2.7",
     "onoff": "^1.0.2",
     "r-pi-usonic": "2.4.1"

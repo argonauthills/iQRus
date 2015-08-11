@@ -2,15 +2,12 @@
 // var gpio = onOff.Gpio
 
 var mo_ = require('./lib/modash')
+
+var config = require('./config')
+
 var sense = require('./sense/index')
 
-var usonic = require('r-pi-usonic');
-var sensor = usonic.createSensor(18, 17, 1000);
-setInterval(function() {
-    console.log('Distance: ' + sensor().toFixed(2) + ' cm');
-}, 100);
-
-sense.init()
+sense.init(config.pins)
 
 console.log("starting...")
 

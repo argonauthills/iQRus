@@ -1,5 +1,9 @@
+var Promise = require('bluebird').Promise
+
 var bm = require('../lib/maths/basic')
 var kine = require('../lib/maths/kinematics')
+
+var ultrasonic = require('./ultrasonic')
 
 var xyPos
 var zPos
@@ -9,8 +13,21 @@ var prevXyPos
 var prevZPos
 var prevRPos
 
-function init() {
+function init(config) {
+    if (!config) throw new Error("missing config")
+    if (!config.pins) throw new Error("missing config pins")
+    return Promise.all([
+        ultrasonicInit(config.pins)
+    ])
+}
 
+function ultrasonicInit(pins) {
+    return ultrasonic.init(pins)
+    .then(function(listener) {
+        listener.on(ultrasonic.newYEventName, function(value) {
+            console.log('Distance: ' + sensor().toFixed(2) + ' cm')
+        })
+    })
 }
 
 
