@@ -56,7 +56,6 @@ function getRVelocity() {
 
 function testValues() {
     setInterval(function() {
-        console.log("xy", xyPos)
         var dx = (Math.random() > .5) ? 1 : -1
         var dy = (Math.random() > .5) ? 1 : -1
         setXyPos(xyPos.value.x + dx, xyPos.value.y + dy)
