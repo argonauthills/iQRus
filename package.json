@@ -30,6 +30,6 @@
     "gpio": "^0.2.7",
     "onoff": "^1.0.2",
     "r-pi-usonic": "2.4.1",
-    "hmc5883l": "git://github.com/argonauthills/hmc5883l.git#d1d807de618ecec845206d5838af1a64063f27a5"
+    "hmc5883l": "git://github.com/argonauthills/hmc5883l.git#d9294d6e0813f8b98f8390dd2db61f4788553184"
   }
 }
