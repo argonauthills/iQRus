@@ -33,7 +33,7 @@ hmc5883l.Initialize(function(err, data)
       console.log("Y value =", data);
       yval = data;
     });
-    bearing = math.atan2(yval, xval) + .48;
+    bearing = Math.atan2(yval, xval) + .48;
     if(bearing < 0)
     {
       bearing += 2 * Math.PI;
